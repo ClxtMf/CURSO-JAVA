@@ -1,0 +1,81 @@
+package curso_java.LogicaProgramacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class EntradaDeDados {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		// string
+		String x;
+		x = sc.next();
+		System.out.printf("Você digitou: %s ", x);
+
+		// int
+		int x1;
+		x1 = sc.nextInt();
+		System.out.println("Você digitou: " + x1);
+
+		//double
+		double x2;
+		x2 = sc.nextDouble();
+		System.out.println("Você digitou: " + x2);
+		sc.close();
+
+		// char
+		char x3; 
+		x3 = sc.next().charAt(0);
+		System.out.printf("Você digitou: %s", x3 );
+
+		// Para ler vários dados na mesma linha
+		String x4;
+		int y;
+		double z;
+
+		x4 = sc.next();
+		y = sc.nextInt();
+		z = sc.nextDouble();
+		System.out.println("Dados digitados:");
+		System.out.println(x4);
+		System.out.println(y);
+		System.out.println(z);
+
+		// para ler um texto até a quebra de linha
+		String s1, s2, s3;
+
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+
+		System.out.println("DADOS DIGITADOS:");
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+
+		
+
+		// quebra de linha pendente
+		int x5;
+		String s4, s5, s6;
+
+		x5 = sc.nextInt();
+		// sc.nextLine();
+		s4 = sc.nextLine();
+		s5 = sc.nextLine();
+		s6 = sc.nextLine();
+
+		System.out.println("DADOS DIGITADOS:");
+		System.out.println(x5);
+		System.out.println(s4);
+		System.out.println(s5);
+		System.out.println(s6);
+
+		sc.close();
+
+	}
+
+}

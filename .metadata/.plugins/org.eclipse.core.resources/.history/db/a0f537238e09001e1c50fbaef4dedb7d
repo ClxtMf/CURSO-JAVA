@@ -1,0 +1,33 @@
+package curso_java;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ProcessamentoDeDados {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		// string
+		String x;
+		x = sc.next();
+		System.out.printf("Você digitou: %s ", x);
+		
+		
+		// int
+		int x1;
+		x1 = sc.nextInt();
+		System.out.println("Você digitou: " + x1);
+		
+		//double
+		double x2;
+		x2 = sc.nextDouble();
+		System.out.println("Você digitou: " + x2);
+		sc.close();
+
+	}
+
+}

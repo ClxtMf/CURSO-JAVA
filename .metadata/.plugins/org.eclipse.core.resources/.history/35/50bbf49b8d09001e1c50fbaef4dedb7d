@@ -1,0 +1,23 @@
+package curso_java;
+
+import java.util.Scanner;
+
+public class ProcessamentoDeDados {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		x = sc.next();
+		System.out.printf("Você digitou: %s ", x);
+		
+		int x1;
+		x1 = sc.nextInt();
+		System.out.println("Você digitou: " + x);
+		
+		sc.close();
+
+	}
+
+}
