@@ -30,6 +30,8 @@ class public EstruturaRepetitiva {
             System.out.println(x + "-" + y);
         }
 
+        // tela: 1-6, 2-8, 3-10.
+
         sc.close();
     }
 }
