@@ -9,6 +9,7 @@ class public EstruturaRepetitiva {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        // estrutura de repetição "enquanto"
         int x = sc.nextInt();
 
         int soma = 0;
