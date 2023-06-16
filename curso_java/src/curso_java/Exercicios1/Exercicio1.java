@@ -1,4 +1,4 @@
-package curso_java.LogicaProgramacao;
+package curso_java.Exercicio1;
 
 import java.util.Locale;
 import java.util.Scanner;
