@@ -19,5 +19,17 @@ class public EstruturaRepetitiva {
         }
 
         System.out.println(soma);
+
+        // teste de mesa manual 
+        int x = 0;
+        int y = 4;
+
+        while (x < 3) {
+            y = y + 2;
+            x = x + 1;
+            System.out.println(x + "-" + y);
+        }
+
+        sc.close();
     }
 }
