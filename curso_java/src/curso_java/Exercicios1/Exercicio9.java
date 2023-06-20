@@ -1,9 +1,5 @@
 package curso_java.Exercicios1;
 
-public class Exercicio9 {
-    class public 
-}package curso_java.Exercicios1;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,24 +13,28 @@ public class Exercicio9 {
         int gasolina = 0;
         int diesel = 0;
 
+        System.out.println("Opções disponíveis: 1-Alcool, 2-Gasolina, 3-Diesel");
+
         int tipo = sc.nextInt();
-        while (tipo != 4) {
+        while (tipo > 0 && tipo < 4) {
             if (tipo == 1) {
                 alcool += 1;
             } else if (tipo == 2) {
-                gasolina += 1;
+                gasolina += 2;
             } else if (tipo == 3) {
-                diesel += 1;
+                diesel += 3;
             }
-
-            tipo = sc.nextInt();
 
             System.out.println("MUITO OBRIGADO!");
             System.out.println("Alcool: " + alcool);
             System.out.println("Gasolina: " + gasolina);
             System.out.println("Diesel: " + diesel);
 
-            sc.close();
+            break;
         }
+
+        System.out.println("Nenhuma opção escolhida!");
+
+        sc.close();
     }
 }
